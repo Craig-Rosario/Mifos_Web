@@ -1,4 +1,3 @@
-import React from 'react';
 import mainImg from '@/assets/images/cover_image.jpg';
 import LoginCard from '@/ShadCN/mycomponents/LoginCard';
 

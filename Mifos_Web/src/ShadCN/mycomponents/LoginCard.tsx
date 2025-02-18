@@ -1,10 +1,9 @@
-import React from 'react'
 import logo from '@/assets/images/mifos_lg-logo.jpg'
 import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
+    // CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Label as ShadLabel} from "@/components/ui/label"
 
 

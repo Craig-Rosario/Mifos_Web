@@ -1,24 +1,20 @@
-import React from 'react'
-
 import DropDown from '@/ShadCN/mycomponents/DropDown'
 import MyAvatar from '@/ShadCN/mycomponents/MyAvatar'
 import { BsBank } from "react-icons/bs";
 import { FaRegMoneyBillAlt, FaChartLine, FaShieldAlt } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
 import { LuMoon } from "react-icons/lu";
-import { IoSunnyOutline } from "react-icons/io5";
+import SidebarTriggerButton from '@/ShadCN/mycomponents/SidebarTriggerButton';
 
 const Navbar = () => {
     return (
         <>
-            <div className="flex justify-between bg-[#1074b9] p-2 shadow-2xl text-base ">
+            <div className="flex justify-between bg-[#1074b9] p- shadow-2xl text-base ">
                 <div className="flex text-base">
-
-                    <div className='flex text-white px-6 py-2 rounded-md transition-all duration-200'>
-                        <button className='cursor-pointer'><GiHamburgerMenu /></button>
+                    <div className='flex  text-white px-6 py-2 rounded-md transition-all duration-200'>
+                        <SidebarTriggerButton />
                     </div>
                     <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
                         <DropDown
