@@ -13,7 +13,7 @@ const Navbar = () => {
         <>
             <div className="flex justify-between bg-[#1074b9] p- shadow-2xl text-base ">
                 <div className="flex text-base">
-                    <div className='flex  text-white px-6 py-2 rounded-md transition-all duration-200'>
+                    <div className='flex  text-white items-center px-6 py-2 rounded-md transition-all duration-200'>
                         <SidebarTriggerButton />
                     </div>
                     <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
