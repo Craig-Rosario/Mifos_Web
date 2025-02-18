@@ -1,9 +1,11 @@
 import DropDown from '@/ShadCN/mycomponents/DropDown'
 import MyAvatar from '@/ShadCN/mycomponents/MyAvatar'
+import MyAlert from '@/ShadCN/mycomponents/MyAlert'
 import { BsBank } from "react-icons/bs";
 import { FaRegMoneyBillAlt, FaChartLine, FaShieldAlt } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
+import { FaInfo } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
 import { LuMoon } from "react-icons/lu";
 import SidebarTriggerButton from '@/ShadCN/mycomponents/SidebarTriggerButton';
@@ -46,6 +48,10 @@ const Navbar = () => {
                             options={["User Management", "App Configuration", "Task Management"]}
                         />
                     </div>
+                    <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center cursor-pointer">
+                        <MyAlert />
+                    </div>
+
                 </div>
                 <div className='flex text-lg '>
                     <div className='flex items-center text-white px-6 py-2 rounded-md transition-all duration-200 ' >
@@ -53,7 +59,7 @@ const Navbar = () => {
                     </div>
                     <div className='flex items-center text-white px-6 py-2 rounded-md transition-all duration-200'>
                         <DropDown name={<span className="flex items-center gap-2 cursor-pointer">Language</span>}
-                        options={["English", "Spanish", "French", "Italian"]} />
+                            options={["English", "Spanish", "French", "Italian"]} />
                     </div>
                     <div className='flex items-center text-white px-6 py-2 rounded-md transition-all duration-200'>
                         <button className='cursor-pointer'><MdNotifications /></button>
@@ -62,7 +68,7 @@ const Navbar = () => {
                         <button className='cursor-pointer'><LuMoon /></button>
                     </div>
                     <div className='flex items-center text-white px-6 py-2 rounded-md transition-all duration-200'>
-                        <button className='cursor-pointer'><MyAvatar/></button>
+                        <button className='cursor-pointer'><MyAvatar /></button>
                     </div>
                 </div>
             </div>
