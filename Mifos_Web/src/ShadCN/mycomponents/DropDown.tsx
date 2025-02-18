@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -9,18 +9,20 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 
-const DropDown = () => {
+interface DropDownProps {
+    name: string | ReactNode;
+    options: string[];
+}
+
+const DropDown: React.FC<DropDownProps> = ({ name, options }) => {
     return (
         <div>
             <DropdownMenu>
-                <DropdownMenuTrigger>Choose Language</DropdownMenuTrigger>
+                <DropdownMenuTrigger>{name}</DropdownMenuTrigger>
                 <DropdownMenuContent>
-                    <DropdownMenuLabel>Lanuage</DropdownMenuLabel>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem>English</DropdownMenuItem>
-                    <DropdownMenuItem>Spanish</DropdownMenuItem>
-                    <DropdownMenuItem>French</DropdownMenuItem>
-                    <DropdownMenuItem>Italian</DropdownMenuItem>
+                    {options.map((option, index) => (
+                        <DropdownMenuItem key={index}>{option}</DropdownMenuItem>
+                    ))}
                 </DropdownMenuContent>
             </DropdownMenu>
 

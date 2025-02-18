@@ -24,7 +24,7 @@ const LoginCard = () => {
             <Card>
                 <div className="flex flex-row-reverse top-4 right-4 ">
                     <CardContent>
-                        <DropDown/>
+                        <DropDown name="Language" options={["English", "Spanish", "French", "Italian"]} />
                     </CardContent>
                 </div>
                 <div className='flex justify-center mb-4 '>
