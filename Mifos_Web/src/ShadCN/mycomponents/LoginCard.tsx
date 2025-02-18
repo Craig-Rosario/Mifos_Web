@@ -14,6 +14,7 @@ import ForgotPassBtn from './ForgotPassBtn'
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import DropDown from './DropDown'
+import NBtn from './NBtn'
 
 
 
@@ -59,9 +60,9 @@ const LoginCard = () => {
                 </div>
                 <div>
                     <CardContent className='flex justify-center'>
-                        <button className='p-2 hover:bg-gray-100 cursor-pointer rounded-lg'>Resources</button>
-                        <button className='p-2 hover:bg-gray-100 cursor-pointer rounded-lg'>Community</button>
-                        <button className='p-2 hover:bg-gray-100 cursor-pointer rounded-lg'>Contribute</button>
+                        <NBtn name="Resources" />
+                        <NBtn name="Community" />
+                        <NBtn name="Contribute" /> 
                     </CardContent>
                 </div>
             </Card>
