@@ -3,7 +3,7 @@ import  {useNavigate} from "react-router-dom"
 const LoginBtn = () => {
   const navigate = useNavigate();
   const handleLogin=()=>{
-    navigate("/");
+    navigate("/home ");
   }
   return (
     <div>

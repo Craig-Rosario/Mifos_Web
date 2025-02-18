@@ -4,6 +4,7 @@ import { SidebarProvider } from "./components/ui/sidebar";
 import { AppSidebar } from "@/ShadCN/mycomponents/AppSidebar";
 import Login from "./pages/auth/Login";
 import Home from "./pages/mainpages/Home";
+import Dashboard from "./pages/mainpages/Dashboard";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -23,20 +24,25 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        {/* Set Login as the first page */}
+        <Route path="/" element={<Login />} />
+        
+        {/* Home Route */}
         <Route
-          path="/"
+          path="/home"
           element={
             <Layout>
               <Home />
             </Layout>
           }
         />
-        <Route path="/login" element={<Login />} />
+
+        {/* Dashboard Route */}
         <Route
-          path="/*"
+          path="/dashboard"
           element={
             <Layout>
-              <div>test</div>
+              <Dashboard />
             </Layout>
           }
         />
