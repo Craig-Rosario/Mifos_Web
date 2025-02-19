@@ -6,6 +6,7 @@ import Login from "./pages/auth/Login";
 import Home from "./pages/mainpages/Home";
 import Dashboard from "./pages/mainpages/Dashboard";
 import NavigationPage from "./pages/mainpages/NavigationPage";
+import ChartOfAccounts from "./pages/mainpages/ChartOfAccounts";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -52,6 +53,16 @@ const App = () => {
               <NavigationPage/>
             </Layout>
           }
+        />
+
+        <Route
+          path="/chart-of-accounts"
+          element={
+            <Layout>
+              <ChartOfAccounts/>
+            </Layout>
+          }
+        
         />
       </Routes>
     </Router>
