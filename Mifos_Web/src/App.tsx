@@ -5,6 +5,7 @@ import { AppSidebar } from "@/ShadCN/mycomponents/AppSidebar";
 import Login from "./pages/auth/Login";
 import Home from "./pages/mainpages/Home";
 import Dashboard from "./pages/mainpages/Dashboard";
+import NavigationPage from "./pages/mainpages/NavigationPage";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -24,10 +25,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Set Login as the first page */}
         <Route path="/" element={<Login />} />
         
-        {/* Home Route */}
         <Route
           path="/home"
           element={
@@ -37,12 +36,20 @@ const App = () => {
           }
         />
 
-        {/* Dashboard Route */}
         <Route
           path="/dashboard"
           element={
             <Layout>
               <Dashboard />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/navigation"
+          element={
+            <Layout>
+              <NavigationPage/>
             </Layout>
           }
         />

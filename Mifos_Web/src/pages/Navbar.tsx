@@ -18,37 +18,37 @@ const Navbar = () => {
                     <div className='flex  text-white items-center px-6 py-2 rounded-md transition-all duration-200'>
                         <SidebarTriggerButton />
                     </div>
-                    <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
+                    <div className="text-white px-3 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
                         <DropDown
                             name={<span className="flex items-center gap-2 cursor-pointer"><BsBank /> Institution</span>}
                             options={["Clients", "Groups", "Centers", "Accounting"]}
                         />
                     </div>
-                    <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
+                    <div className="text-white px-3 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
                         <DropDown
                             name={<span className="flex items-center gap-2 cursor-pointer"><FaRegMoneyBillAlt /> Accounting</span>}
                             options={["Clients", "Groups", "Centers", "Accounting", "Reports", "Admin", "Self Service"]}
                         />
                     </div>
-                    <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
+                    <div className="text-white px-3 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
                         <DropDown
                             name={<span className="flex items-center gap-2 cursor-pointer"><FaChartLine /> Reports</span>}
                             options={["All", "Clients", "Loans", "Savings", "Funds", "Accounting", "XBRL"]}
                         />
                     </div>
-                    <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
+                    <div className="text-white px-3 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
                         <DropDown
                             name={<span className="flex items-center gap-2 cursor-pointer"><FaShieldAlt /> Admin</span>}
                             options={["Users", "Organization", "System", "Products", "Templates"]}
                         />
                     </div>
-                    <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
+                    <div className="text-white px-3 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center">
                         <DropDown
                             name={<span className="flex items-center gap-2 cursor-pointer"><MdGroups /> Self Service</span>}
                             options={["User Management", "App Configuration", "Task Management"]}
                         />
                     </div>
-                    <div className="text-white px-6 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center cursor-pointer">
+                    <div className="text-white px-3 py-2 rounded-md transition-all duration-200 hover:bg-[#1085b9] flex items-center cursor-pointer">
                         <MyAlert />
                     </div>
 
