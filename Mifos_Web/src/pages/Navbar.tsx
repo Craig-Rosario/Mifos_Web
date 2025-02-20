@@ -5,7 +5,6 @@ import { BsBank } from "react-icons/bs";
 import { FaRegMoneyBillAlt, FaChartLine, FaShieldAlt } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
-import { FaInfo } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
 import { LuMoon } from "react-icons/lu";
 import SidebarTriggerButton from '@/ShadCN/mycomponents/SidebarTriggerButton';
