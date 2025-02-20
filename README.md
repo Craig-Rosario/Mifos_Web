@@ -1,17 +1,9 @@
-Currently There is an issue with the use of tremor and React 19<br>
-This leads to errors while setting up the project
+The project can currently be accessed on Vercel: https://mifos-web.vercel.app/
 <br>
-Although a more permanent fix would be to Replace tremor charts completely by ShadCN charts library
+(Currently no using 'tremor' since it causes issues with React 19)
 <br>
-For now, please run the following commands to view the project in the following directory (..\Mifos_Web\Mifos_Web):
-<br>
-<br>
-npm install react@18 react-dom@18
-<br>
+If you want to build the project locally, Run the following commands:
+<br><br>
 npm install
 <br>
 npm run dev
-<br>
-(DO NOTE, that since we are moving to a previous react version, there are issues with ShadCN/ Alignment/ Dropdown not loading properly)
-<br>
-But the general layout of the website can be seen with no probelms
